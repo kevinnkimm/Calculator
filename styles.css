@@ -22,7 +22,7 @@ body {
     outline: 3px solid #b4e7ff; /* Outline around buttons and output */
     border-radius: 80px; /* Adjust border radius */
     padding: 0;
-    width: 450px;
+    width: 420px;
     height: 500px;
     display: flex;
     align-items: center;
@@ -71,8 +71,12 @@ body {
 
 .output {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
     background-color: rgb(255, 255, 255, 70%);
     height: 70px;
     width: 300px;
@@ -81,6 +85,15 @@ body {
     border-radius: 30px;
 }
 
+.output .previous-operand {
+    color: rgb(0, 0, 0, 70%);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
 
 
 
